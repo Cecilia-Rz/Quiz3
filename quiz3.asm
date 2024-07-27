@@ -19,7 +19,7 @@ factorial_loop:
     jmp factorial_loop ; Repeat the loop
 
 end_factorial:
-    mov [result], eax ; Store the result in memory
+    mov [result], eax ; Store the result in memory. Watch (int) result
 
     ; Exit the program
     mov eax, 1      ; Exit syscall number
